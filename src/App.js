@@ -2,9 +2,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Content from './Components/Content'
-import Header from './Components/Header';
-import Footer from './Components/Footer';
 import Container from 'react-bootstrap/Container';
+import Read from './Components/Read'
+import Create from './Components/create'
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -21,7 +21,7 @@ function App() {
           <Nav className="me-auto">
             {/* the different components linked */}
             <Nav.Link href="/">Home</Nav.Link> 
-            <Nav.Link href="/read">Read </Nav.Link>
+            <Nav.Link href="/Read">Read </Nav.Link>
             <Nav.Link href="/create">Create </Nav.Link>
           </Nav>
         </Container>
@@ -32,15 +32,15 @@ function App() {
       <Routes> 
       <Route path='/' element= {<Content> </Content>}> </Route>
       </Routes>
-      {/* This one leads to Header */}
+      {/* This one leads to Read component */}
 
     <Routes> 
-    <Route path='/read' element= {<Header> </Header>}> </Route>
+    <Route path='/Read' element= {<Read> </Read>}> </Route>
     </Routes>
-      {/* This one leads to Footer */}
+      {/* This one leads to create component */}
 
     <Routes> 
-    <Route path='/create' element= {<Footer> </Footer>}> </Route>
+    <Route path='/create' element= {<Create> </Create>}> </Route>
     </Routes>
 
     
