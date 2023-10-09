@@ -46,7 +46,7 @@ function Read() {
     
     return(
         <div> 
-            <h2> read</h2>
+{/* here is where we take the data from books.js to display in here using the data constant  */}
 <Books myBooks={data}> </Books>
 
 </div>

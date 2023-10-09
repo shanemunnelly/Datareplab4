@@ -3,6 +3,7 @@ import Item from "./Item";
 function Books(props) {
     return props.myBooks.map(
         (book)=>{  
+            // key refers to giving each set of data a unique identifier in case the database would increase in size in the future 
             return <Item mybook={book} key={book.isbn} ></Item>
         }
             
